@@ -1,7 +1,19 @@
+$red: #ba181b;
+
 * {
   margin: 0;
   padding: 0;
+  line-height: 1.6;
   font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+a {
+  transition: 0.3s;
+}
+
+a:hover {
+  color: $red;
 }
 
 .poppins-thin {
@@ -92,4 +104,12 @@
 .poppins-black-italic {
   font-weight: 900;
   font-style: italic;
+}
+
+html {
+  background-color: #212529;
+}
+
+.container {
+  padding: 0 3cm;
 }
