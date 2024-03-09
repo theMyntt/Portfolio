@@ -6,6 +6,8 @@ $red: #ba181b;
   justify-content: center;
   background-color: rgba(33, 37, 41, 0.5);
   backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  -moz-backdrop-filter: blur(25px);
   align-items: center;
   height: 75px;
   padding: 0 3cm;
