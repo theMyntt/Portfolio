@@ -113,3 +113,14 @@ html {
 .container {
   padding: 0 3cm;
 }
+
+input, button {
+  outline: none;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 1.5cm;
+  }
+}
