@@ -1,7 +1,10 @@
 {
   "name": "myportfolio",
-  "private": true,
-  "version": "0.0.0",
+  "author": "Gabriel Araújo Lima <gabriel.araujo2902@outlook.com>",
+  "description": "Meu portfólio com minhas competências e habilidades.",
+  "license": "ISC",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
