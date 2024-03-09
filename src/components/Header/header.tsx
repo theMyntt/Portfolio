@@ -9,11 +9,6 @@ export default function Header(props: Props): JSX.Element {
   return (
     <div className="app-container">
       <div className="header-container">
-        <div className="header-logo">
-          <a href="/">
-            <h2>Portfólio</h2> 
-          </a>
-        </div>
         <div className="header-menu">
           <ul>
             {props.menuItems.map((item: string, index: number) => (

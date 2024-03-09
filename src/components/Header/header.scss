@@ -3,11 +3,16 @@ $red: #ba181b;
 
 .header-container {
   display: flex;
-  justify-content: space-between;
-  background-color: $gray;
+  justify-content: center;
+  background-color: rgba(33, 37, 41, 0.5);
+  backdrop-filter: blur(25px);
   align-items: center;
   height: 75px;
   padding: 0 3cm;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .header-container > .header-logo > a,
