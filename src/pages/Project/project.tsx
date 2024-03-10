@@ -2,8 +2,6 @@ import Header from "@/components/Header/header";
 
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
-
-import "./scss/project.scss";
 import { ArrowLeft } from "lucide-react";
 
 export default function Project(): JSX.Element {
