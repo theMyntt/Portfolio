@@ -43,7 +43,6 @@ export default function Contact(): JSX.Element {
         <br />
         <button type="submit">Enviar</button>
       </form>
-      <br /> <br />
     </div>
   );
 }

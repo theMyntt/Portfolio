@@ -80,6 +80,13 @@ button {
   display: none;
 }
 
+@media (min-width: 900px) {
+  
+  #contact {
+    padding: 75px 3cm;
+  }
+}
+
 @media (max-width: 900px) {
   #me-image {
     // width: 200px;
@@ -108,5 +115,8 @@ button {
     margin-top: 75px;
     padding: 0 1.5cm;
     height: auto;
+  }
+  #contact {
+    padding: 75px 1.5cm;
   }
 }
