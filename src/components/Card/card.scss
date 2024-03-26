@@ -1,0 +1,54 @@
+@use "../../main.scss";
+
+.card {
+  background-color: main.$gray;
+  padding: 30px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: content-box;
+}
+
+.card > div {
+  display: inherit;
+  flex-direction: column;
+}
+
+.card > div > .custom-a {
+  background-color: main.$red;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card > div > .custom-a > span {
+  font-size: 12px;
+}
+
+.card > img {
+  height: -webkit-fill-available;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 901px) {
+  .card > div {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    flex-direction: column;
+    height: auto;
+  }
+  .card > img {
+    width: -webkit-fill-available;
+  }
+}
