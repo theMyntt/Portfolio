@@ -20,6 +20,7 @@
 .card > div {
   display: inherit;
   flex-direction: column;
+  width: 100%;
 }
 
 .card > div > .custom-a {
@@ -37,8 +38,8 @@
 }
 
 .card > img {
-  height: -webkit-fill-available;
   border-radius: 15px;
+  height: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -54,7 +55,8 @@
     height: auto;
   }
   .card > img {
-    width: -webkit-fill-available;
+    width: 100%;
+    height: auto;
     margin-bottom: 15px;
   }
 }
