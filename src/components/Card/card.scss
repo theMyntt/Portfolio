@@ -10,6 +10,11 @@
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   box-sizing: content-box;
+  margin-bottom: 1cm;
+}
+
+.card:last-child {
+  margin-bottom: 0;
 }
 
 .card > div {
@@ -50,5 +55,6 @@
   }
   .card > img {
     width: -webkit-fill-available;
+    margin-bottom: 15px;
   }
 }
