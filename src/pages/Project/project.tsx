@@ -1,32 +1,12 @@
 import Header from "@/components/Header/header";
+import Card from "@/components/Card/card";
 
-import { DataTable } from "primereact/datatable";
-import { Column } from "primereact/column";
 import { ArrowLeft } from "lucide-react";
 
 import "./scss/project.scss"
 
 export default function Project(): JSX.Element {
-  interface projectsObject {
-    Nome: string;
-    Repositorio: React.ReactElement;
-    Deploy: React.ReactElement | "N/A";
-    // header: string;
-  }
-
-  const projects: projectsObject[] = [
-    { Nome: "basicT", Repositorio: <a href="https://github.com/themyntt/basicT">github.com/basicT</a>,Deploy: <a href="https://github.com/theMyntt/basicT/releases/">github.com/releases</a>},
-    { Nome: "Luxure", Repositorio: <a href="https://github.com/themyntt/luxure">github.com/Luxure</a>,Deploy: "N/A"},
-    { Nome: "Hub Eyes", Repositorio: <a href="https://github.com/themyntt/hub-eyes">github.com/HubEyes</a>,Deploy: "N/A"},
-    { Nome: "Manage++", Repositorio: <a href="https://github.com/themyntt/ManagePP">github.com/Manage++</a>,Deploy: "N/A"},
-    { Nome: "SGA", Repositorio: <a href="https://github.com/themyntt/SGA">github.com/SGA</a>,Deploy: "N/A"},
-  ];
-
-  const columns: string[] = [
-    "Nome",
-    "Repositorio",
-    "Deploy"
-  ]
+  const href = "https://github.com/themyntt/"
 
   return (
     <div className="projects">
@@ -36,11 +16,13 @@ export default function Project(): JSX.Element {
       />
       <div className="container project">
         <h1>Meus projetos</h1> <br />
-        <DataTable value={projects} tableStyle={{ minWidth: '25rem' }}>
-          {columns.map((item: string, index: number) => (
-            <Column key={index} field={item} header={item}></Column>
-          ))}
-        </DataTable>
+        <div id="align-card">
+          <Card title="SGA" desc="Sistema de Gerenciamento de Alunos desenvolvido com ReactTS, Python Flask e MySQL." href={`${href}sga`} img="/sga.png"/>
+          <Card title="BasicT" desc="Sistema PDV desenvolvido com PHP e SQLite." href={`${href}basict`} img="/basict.png"/>
+          <Card title="Auth System Api" desc="API para registrar e fazer login desenvolvida com NestTS" href={`${href}auth-system-api`} img="/auth.png"/>
+          <Card title="Hub Eyes" desc="Projeto não decidio ainda. Desenvolvido com HTML, CSS, Javascript, JQuery e Flask" href={`${href}hub-eyes`} img="/hub-eyes.png"/>
+          <Card title="Financee" desc="Aplicativo de finanças desenvolvido com React Nativo" href={`${href}financee`} img="/financee.png"/>
+        </div>
         <br />
         <button style={{display: "flex", alignItems: "center", justifyContent: "center"}} onClick={() => window.location.href = "/"}><ArrowLeft /> Voltar</button>
       </div>
